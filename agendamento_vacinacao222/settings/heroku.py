@@ -1,6 +1,6 @@
 import environ
 
-from agendamentovacinas.settings.base import *
+from agendamento_vacinacao222.settings.base import *
 
 env = environ.Env()
 
