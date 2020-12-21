@@ -17,7 +17,7 @@ def main():
         ) from exc
     execute_from_command_line()
 
-if __name__ == "__main__":
+if __name__ == "main":
     main()
 
 
