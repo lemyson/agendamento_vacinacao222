@@ -1,0 +1,27 @@
+{% extends "agen/base.html" %}
+
+{% block title %}Meu agen 🐍{% endblock %}
+
+{% block content %}
+    {% for post in post_list %}
+        <article>
+            <h2>
+                <a ></a>{{post.title }}
+                    
+                </a>
+            </h2>
+            
+                <p class="data">
+                 Disponivel para agendamento 
+                </p>
+             
+                    {{ post.body|linebreaks|truncatewords:10 }}
+
+                <a href=" "> AGENDAMENTO 
+                </a>
+                <br/>
+                <br/>
+                
+             </article>
+    {% endfor %}
+{% endblock %}

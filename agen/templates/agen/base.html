@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <canvas id="UgCanvas" width="1340" height="100" style="border:1px solid #0e157c;">
+        </canvas>
+        <script type="text/javascript">
+        var c=document.getElementById("UgCanvas");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="   #0e157c";
+        ctx.fillRect(0,0,1340,100);
+        </script>
+        </body>
+        <head>
+
+                     
+        
+    <body>
+       
+        </body>
+<head>
+   
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/agen.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;
+         Faça seu Cadastro e Agende sua vacinação 
+               
+            
+
+    </header>
+    
+    <header>
+        <h1> <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;
+            É importante está com a vacinação em dia
+    </header>
+    
+    <header>
+        <h1><br/><br/> Agendamento disponível na unidade abaixo: 
+               </h1>
+    </header>
+    
+    <main>
+        
+
+        
+        &nbsp; {% block content %}
+        &nbsp; {% endblock %} 
+    </main>
+    
+</body>
+<br/>
+
+<a href="http://www.google.com"> Aproveite e faça seu cartão de vacina CLICANDO AQUI e receba na unidade de saúde</a>
+<br/>
+</html>
