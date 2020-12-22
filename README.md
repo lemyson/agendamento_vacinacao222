@@ -1,6 +1,8 @@
 # agendamento_vacinacao222
 link heroku: https://secret-reaches-54434.herokuapp.com/agen/
 
+link github:https://github.com/lemyson/agendamento_vacinacao222.git
+
 Itens essenciais.
 # python
 # Django
@@ -9,13 +11,7 @@ Itens essenciais.
 Executando o projeto localmente:
     Instale a virtualenv, execute:
     $ pip install virtualenv
-    Crie uma localenv
-    $ mkdir my_project_env
-    $ cd my_project_env
-    $ virtualenv -p /usr/bin/python3.9 my_project
-    $ source my_project/bin/activate
-    $ cd my_project
-
+    
     se não conseguir criar a virtualenv: http://docs.python-guide.org/en/latest/dev/virtualenvs/
     Criada a virtualenv, execute para instalar dependências:
 
@@ -27,7 +23,12 @@ Executando o projeto localmente:
 
     Execute:
 
-    $ cd agendador
+    $ py -m venv venv
+    $.\venv\Scripts\activate
+    $ cd caminho_do_projeto
+    $ py .\manage.py runserver
+    $ python manage.py makemigrations
+    $ python manage.py migrate
 
     Execute:
 
@@ -36,5 +37,6 @@ Executando o projeto localmente:
 
     Por fim, execute:
 
-    $ python manage.py loaddata auth.json
-    $ python manage.py loaddata agenda.json
+    $settings.json
+
+ 
