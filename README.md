@@ -38,5 +38,8 @@ Executando o projeto localmente:
     Por fim, execute:
 
     $settings.json
+<<<<<<< HEAD
 
  
+=======
+>>>>>>> 2f40f9ba6e6c5ab37d960a68367fe05f11691eba
